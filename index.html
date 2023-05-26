@@ -5,41 +5,44 @@
     <title>What's for Dinner?</title>
   </head>
   <body>
-    <section>
-      <header>What's for Dinner?</header>
-      <button class=recipe-button>ADD A RECIPE</button>
-    </section>
-    <section>
-    <h1>What are you looking for?</h1>
-    <ul style="list-style-type:none">
-      <li>
-        <label for="Side">
-          <input type="radio" id="Side" name="radio-group">
-            Side
-        </label>
-      </li>
-      <li>
-        <label for="Main Dish">
-          <input type="radio" id="Main Dish" name="radio-group">
-            Main Dish
-        </label>
-      </li>
-      <li>
-        <label for="Dessert">
-          <input type="radio" id="Dessert" name="radio-group">
-            Dessert
-        </label>
-      </li>
-      <li>
-        <label for="Entire Meal">
-          <input type="radio" id="Entire Meal" name="radio-group">
-            Entire Meal
-        </label>
-      </li>
-    </ul>
-      <button>LET'S COOK!</button>
-    </section>
-    
+    <header>
+      <h1>What's for Dinner?</h1>
+    </header>
+     <main class="main-section background-pic">
+       <section class="radio box" id="radio-box">
+         <h2 class="h1">What are you looking for?</h2>
+         <ul style="list-style-type:none">
+          <li>
+            <label for="Side">
+              <input type="radio" id="Side" name="radio-group">
+              Side
+            </label>
+          </li>
+          <li>
+            <label for="Main Dish">
+              <input type="radio" id="Main Dish" name="radio-group">
+              Main Dish
+            </label>
+          </li>
+          <li>
+            <label for="Dessert">
+              <input type="radio" id="Dessert" name="radio-group">
+              Dessert
+            </label>
+          </li>
+          <li>
+            <label for="Entire Meal">
+              <input type="radio" id="Entire Meal" name="radio-group">
+              Entire Meal
+            </label>
+          </li>
+        </ul>
+        <button class="cookButton">LET'S COOK!</button>
+      </section>
+      <section class="pot box" id="pot-box">
+        <img class="cook-pot-img" src="assets/cookpot.svg">
+      </section>
+     </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
