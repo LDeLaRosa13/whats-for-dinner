@@ -49,3 +49,25 @@ Tart Tatin,
 Croissants,
 Eclairs
 ];
+
+//  Query Selectors & Elements
+
+var sideRadioButton = document.getElementById("#side")
+var mainRadioButton = document.getElementById("#mainDish")
+var dessertRadioButton = document.getElementById("#dessert")
+var entireMealRadioButton = document.getElementById("#entireMeal")
+
+var letsCookButton = document.querySelector(".cookButton")
+var cookPot = document.querySelector("cook-pot-img")
+
+// Event Listeners
+
+letsCookButton.addEventListener("click", functionNameHere)
+
+// Functions
+
+function getRandomIndex(recipes) {
+  return Math.floor(Math.random() * recipes.length);
+}
+
+
