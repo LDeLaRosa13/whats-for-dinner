@@ -10,29 +10,31 @@
     </header>
      <main class="main-section background-pic">
        <section class="radio box" id="radio-box">
-         <h2 class="h1">What are you looking for?</h2>
+         <h2 class="h2">What are you looking for?
+          <span>*</span>
+         </h2>
          <ul style="list-style-type:none">
           <li>
             <label for="Side">
-              <input type="radio" id="side" name="radio-group">
+              <input class="radio" type="radio" id="side" name="radio-group">
               Side
             </label>
           </li>
           <li>
             <label for="Main Dish">
-              <input type="radio" id="mainDish" name="radio-group">
+              <input class="radio" type="radio" id="mainDish" name="radio-group">
               Main Dish
             </label>
           </li>
           <li>
             <label for="Dessert">
-              <input type="radio" id="dessert" name="radio-group">
+              <input class="radio" type="radio" id="dessert" name="radio-group">
               Dessert
             </label>
           </li>
           <li>
             <label for="Entire Meal">
-              <input type="radio" id="entireMeal" name="radio-group">
+              <input class="radio" type="radio" id="entireMeal" name="radio-group">
               Entire Meal
             </label>
           </li>
@@ -40,7 +42,9 @@
         <button class="cookButton">LET'S COOK!</button>
       </section>
       <section class="pot box" id="pot-box">
-        <img class="cook-pot-img" src="assets/cookpot.svg">
+        <div class="suggestionMeal"></div> 
+        <div class="meal-suggestion-placeholder"></div>
+        <img class="cook-pot-img" src="assets/cookpot.svg" alt="outline of black and white cooking pot">
       </section>
      </main>
   </body>
