@@ -97,7 +97,10 @@ red - #ee5253 */
       color: red;
     }
 
-    #mealBox {
+    .mealBox {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
    }
