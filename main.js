@@ -86,18 +86,7 @@ function showNewFood() {
     mealPlaceholder.innerText = desserts[getRandomIndex(desserts)];
   } else {
     entireMealRadioButton.checked;
-    var entireMeal = `Side: ${side}, Main Dish: ${main}, Dessert: ${dessert}`;
+    var entireMeal = `${main} with a side of ${side} and ${dessert} for dessert!`;
     mealPlaceholder.innerText = entireMeal;
-  }
-}
-
-function hide(element) {
-  for (var i = 0; i < element.length; i++) {
-    element[i].classList.add("hidden");
-  }
-}
-function show(element) {
-  for (var i = 0; i < element.length; i++) {
-    element[i].classList.remove("hidden");
   }
 }

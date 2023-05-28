@@ -1,106 +1,107 @@
- font-family: 'Roboto', sans-serif; 
+*/ * {
+  font-family: "Roboto", sans-serif;
+}
 
-/* COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253 */
+.main-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
 
-*/
-* {
-    border: 1px solid yellow;
-  }
-  
-  .main-section {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%
-  }
+body {
+  background-image: url(assets/burger-friends.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-  body {
-    background-image: url(assets/burger-friends.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  .box {
-    background-color: rgba(225, 225, 225, .9);
-    height: 350px;
-    width: 450px;
-    align-items: center;
-  }
-  
-  #pot-box {
-    background-color: rgba(225, 225, 225, .9);
-    height: 350px;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
+.box {
+  background-color: rgba(225, 225, 225, 0.9);
+  height: 350px;
+  width: 450px;
+  align-items: center;
+}
 
-  .cookButton {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-color: #0fb9b1;
-    box-shadow: 0px 0px 0px 0px;
-    border: none;
-    padding: 20px;
-    border-radius: 4px;
-    width: 200px;
-    height: 10px;
-    margin-left: 40;
-    margin-top: -12
-  }
+#pot-box {
+  background-color: rgba(225, 225, 225, 0.9);
+  height: 350px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  header {
-    background-color: #0fb9b1;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    margin-top: -10;
-    margin-left: -8;
-    margin-right: -8
-  }
+header {
+  background-color: #0fb9b1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: -10;
+  margin-left: -8;
+  margin-right: -8;
+}
 
-  h1 {
-    margin-top: -1 ;
-    font-size: 18px;
-    margin-bottom: 0;
-    margin-left: 15;
-  }
+h1 {
+  margin-top: -1;
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-left: 15;
+}
 
-    .h2 {
-      margin-top: 55px;
-      margin-left: 25px;
-      margin-bottom: 0;
-    }
+.h2 {
+  margin-top: 55px;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
 
-    .radio {
-      margin-bottom: 20px;
-    }
+span {
+  color: #ee5253;
+}
 
-   .cook-pot-img {
-      width: auto;
-      height: 150px;
-      position: center;
-    }
+.radio {
+  margin-bottom: 20px;
+}
 
-    .hidden {
-      display: none;
-    }
+.cookButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0fb9b1;
+  box-shadow: 0px 0px 0px 0px;
+  border: none;
+  padding: 20px;
+  border-radius: 4px;
+  width: 200px;
+  height: 10px;
+  margin-left: 40;
+  margin-top: -12;
+}
 
-    span {
-      color: red;
-    }
+.cook-pot-img {
+  width: auto;
+  height: 150px;
+  position: center;
+}
 
-    .mealBox {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-   }
+.mealBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.meal-suggestion-placeholder {
+  font-size: x-large;
+}
+
+.suggestionMeal {
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: 300;
+}
+
+.hidden {
+  display: none;
+}
