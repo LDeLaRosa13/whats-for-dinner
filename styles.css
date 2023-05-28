@@ -97,6 +97,7 @@ red - #ee5253 */
       color: red;
     }
 
-    /* .suggestionMeal {
-
-    } */
+    #mealBox {
+      display: flex;
+      justify-content: center;
+   }
