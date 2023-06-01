@@ -65,11 +65,6 @@ var mealPlaceholder = document.querySelector(".meal-suggestion-placeholder");
 // Event Listeners
 letsCookButton.addEventListener("click", showNewFood);
 
-// variables
-var side = sides[getRandomIndex(sides)];
-var main = mains[getRandomIndex(mains)];
-var dessert = desserts[getRandomIndex(desserts)];
-
 // Functions
 function getRandomIndex(recipes) {
   return Math.floor(Math.random() * recipes.length);
@@ -79,14 +74,19 @@ function showNewFood() {
   cookPot.classList.add("hidden");
   suggestionMeal.classList.remove("hidden");
   if (sideRadioButton.checked) {
-    mealPlaceholder.innerText = sides[getRandomIndex(sides)];
+    mealPlaceholder.innerText = getMeal(sides);
   } else if (mainRadioButton.checked) {
-    mealPlaceholder.innerText = mains[getRandomIndex(mains)];
+    mealPlaceholder.innerText = getMeal(mains);
   } else if (dessertRadioButton.checked) {
-    mealPlaceholder.innerText = desserts[getRandomIndex(desserts)];
+    mealPlaceholder.innerText = getMeal(desserts);
   } else {
-    entireMealRadioButton.checked;
-    var entireMeal = `${main} with a side of ${side} and ${dessert} for dessert!`;
+    var entireMeal = `${getMeal(mains)} with a side of ${getMeal(
+      sides
+    )} and ${getMeal(desserts)} for dessert!`;
     mealPlaceholder.innerText = entireMeal;
   }
+}
+
+function getMeal(mealArray) {
+  return mealArray[getRandomIndex(mealArray)];
 }
